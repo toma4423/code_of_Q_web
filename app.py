@@ -207,7 +207,7 @@ def main():
         if st.session_state.qr_image:
             # PIL Imageをバイト形式に変換してから表示
             img_bytes = pil_image_to_bytes(st.session_state.qr_image)
-            st.image(img_bytes, caption="生成されたQRコード", use_column_width=True)
+            st.image(img_bytes, caption="生成されたQRコード", use_container_width=True)
             
             # 現在の日時をファイル名に使用
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
