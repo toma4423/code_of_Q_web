@@ -251,7 +251,7 @@ def main():
 
     # フッター
     st.markdown("---")
-    st.markdown("© 2023 QRコード生成アプリ | 作成者: toma4423")
+    st.markdown("© 2025 QRコード生成アプリ | 作成者: toma")
 
 
 if __name__ == "__main__":
