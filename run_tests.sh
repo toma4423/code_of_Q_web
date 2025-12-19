@@ -5,11 +5,8 @@
 
 echo "QRコード生成アプリケーションのテストを開始します..."
 
-# 仮想環境をアクティベート
-source env/bin/activate
-
-# テストを実行
-python -m unittest test_qr_generator.py
+# uvを使用してテストを実行
+uv run python -m unittest test_qr_generator.py
 
 # 終了ステータスを取得
 status=$?
@@ -20,4 +17,4 @@ else
     echo "テストに失敗しました。エラーを確認してください。"
 fi
 
-exit $status 
+exit $status
